@@ -42,9 +42,16 @@ input{
 .btn1{
     width: 50px;
     background-color: orange;
+    cursor: pointer;
 }
-
+.btn1:hover {
+background-color: darkgoldenrod;
+}
 .btn2{
     width: 50px;
     background-color: red;
+    cursor: pointer;
+}
+.btn2:hover {
+    background-color: rgb(145, 0, 0);
 }
