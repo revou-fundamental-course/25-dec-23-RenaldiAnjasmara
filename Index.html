@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TriCal</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    
 </head>
 <body>
     <Header>
@@ -16,59 +17,26 @@
     </Header>
     
     <p id="sub">Area of Triangle</p>
-    <div id="Areaimg">
-        <img src="Area.png" height="150px" width="250px">   
-    </div>
-<table>
-    <tr>
-        <th colspan="2">Area of Triangle = 1/2 X (h X b)</th>
-    </tr>
-    <tr id="input-area">
-        <section class="input class-section">
-            <td><label for="input-height" id="height-lable">height</label></td>
-            <td><input type="number" id="height-lable"></td>
-        </section>
-    </tr>
-    <tr>    
-        <section class="input class-section">
-            <td><label for="input-base" id="base-lable">base</label></td>
-            <td><input type="number" id="base-lable"></td>
-        </section>
-    </tr>
-    <tr>                  
-        <td><button id="calculate-area">Calculate</button></td>
-        <td><input type="number" id="result-area" disabled="true"></td>
-    </tr>
-    </table>
-        <p id="sub">Circumference of triangle</p>
+    <div id="Areaimg"><img src="Area.png" height="150px" width="250px">   </div>
+
+<!--luas segitiga-->
+    <div class="form" >height   
+        <input class="form" type="number" id="height1" name="height1"></div>
+    <div class="form" >base     
+        <input class="form" type="number" id="base1" name="base1"></div>
+    <div class="form" >area     
+        <input class="form" type="number" id="result1" name="result1" disabled="true" size="5"></div>
+
+    <div><input class="btn1" type="button" value="start" onclick="area()"></div>
+
+    <div><input class="btn2" type="button" value="reset" name="reset1" id="reset1"></div>
+
+    <p id="sub">Circumference of triangle</p>
     <div><img src="Circumference.png" height="150px" width="250px"></div>
-<table>
-    <tr>
-        <th colspan="2">Circumference of triangle = Side A + Side B + Side C</th>
-    </tr>
-    <tr id="input-area">
-        <section class="input class-section">
-            <td><label for="input-base" id="side-a-label">Side A</label></td>
-            <td><input type="number" id="side-a"></td>
-        </section>
-    </tr>
-    <tr id="input-area">
-        <section class="input class-section">
-            <td><label for="input-base" id="side-b-label">Side B</label></td>
-            <td><input type="number" id="side-b"></td>
-        </section>
-    </tr>
-    <tr>    
-        <section class="input class-section">
-            <td><label for="input-base" id="side-c-label">Side C</label></td>
-            <td><input type="number" id="side-c"></td>
-        </section>
-    </tr>
-    <tr>                  
-        <td><button id="calculate-circumference">Calculate</button></td>
-        <td><input type="number" id="result-circumference" disabled="true"></td>
-    </tr>
-    </table>
+
+<!--keliling segitiga-->
+
+<script src="./JS/Script.js"></script>
 </body>
 
 </html>

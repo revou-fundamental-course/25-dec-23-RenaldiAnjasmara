@@ -22,25 +22,31 @@ a {
     padding-bottom: 10px;
     color:black;
 }
-div {
+div {       
     text-align: center;
-}
-   
-label {
     color:black;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #93B874;
 }
 input{
     padding: 5px;
     width: 200px;
-    padding-left: 10px;
-    grid: 10px;
-    border-radius: 15px;
+    border-radius: 5px;
+}
+.form {
+    display: grid;
+    grid-gap: 10px;
+    text-align: left;  
+    grid-template-columns: 50px 200px; 
 }
 
-table {
-    text-align: center;
-    color:black;
-    border-radius: 15px;
-    padding: 15px;
-    background-color: #93B874; 
+.btn1{
+    width: 50px;
+    background-color: orange;
+}
+
+.btn2{
+    width: 50px;
+    background-color: red;
 }
