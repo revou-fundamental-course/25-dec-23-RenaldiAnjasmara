@@ -11,30 +11,46 @@
     <Header>
         <h1>Triangle Calculation</h1>
         <nav class="navigation">
-            <a href="">Area of Triangle</a>
-            <a href="">Circumference of Triangle</a>
+            <a href="#areanav">Area of Triangle</a>
+            <a href="#circumnav">Circumference of Triangle</a>
         </nav> 
     </Header>
     
-    <p id="sub">Area of Triangle</p>
+    <p id="areanav">Area of Triangle</p>
     <div id="Areaimg"><img src="Area.png" height="150px" width="250px">   </div>
 
 <!--luas segitiga-->
+<form id="formarea">
     <div class="form" >height   
         <input class="form" type="number" id="height1" name="height1"></div>
     <div class="form" >base     
         <input class="form" type="number" id="base1" name="base1"></div>
-    <div class="form" >area     
+    <div class="form" >result     
         <input class="form" type="number" id="result1" name="result1" disabled="true" size="5"></div>
 
-    <div><input class="btn1" type="button" value="start" onclick="area()"></div>
+    <div><input class="btn1" type="button" value="start" onclick="area()">
+    </form>
 
-    <div><input class="btn2" type="button" value="reset" name="reset1" id="reset1"></div>
+    <input class="btn2" type="button" value="reset" onclick="reseta()"></div>
 
-    <p id="sub">Circumference of triangle</p>
+    <p id="circumnav">Circumference of triangle</p>
     <div><img src="Circumference.png" height="150px" width="250px"></div>
 
 <!--keliling segitiga-->
+<form id="circumform">
+    <div class="form">Side A
+        <input type="number" class="form" id="sa1" name="sa1"></div>
+    <div class="form">Side B
+        <input type="number" class="form" id="sb1" name="sb1"></div>
+    <div class="form">Side C
+        <input type="number" class="form" id="sc1" name="sc1"></div>
+    <div class="form">result
+        <input type="number" id="circum1" name="circum1" disabled="true" size="5" class="form"></div>
+
+        <div class="position"><input class="btn1" type="button" value="start" onclick="circum()">
+        </form>
+
+        <input class="btn2" type="button" value="reset" onclick="resetb()"></div>
 
 <script src="./JS/Script.js"></script>
 </body>
